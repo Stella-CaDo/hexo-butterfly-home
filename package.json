@@ -1,0 +1,44 @@
+{
+  "name": "hexo-butterfly-home-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node tools/fix-hexo-compat.js && npm run build:homepage && hexo generate --force --bail",
+    "build:homepage": "npm --prefix apps/homepage run build && node apps/homepage/scripts/sync-to-hexo.mjs",
+    "ai:summary": "node tools/ai-summary/generate.cjs",
+    "ai:summary:check": "node tools/ai-summary/generate.cjs --dry-run",
+    "test:ai-summary": "node --test tools/ai-summary/summary.test.cjs",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "node tools/fix-hexo-compat.js && hexo server",
+    "test": "npm run test:ai-summary && npm --prefix apps/homepage test",
+    "check:source": "node tools/check-public-source.cjs"
+  },
+  "hexo": {
+    "version": "8.1.1"
+  },
+  "dependencies": {
+    "hexo": "^8.0.0",
+    "hexo-all-minifier": "^0.5.7",
+    "hexo-butterfly-envelope": "^1.0.15",
+    "hexo-butterfly-swiper": "^1.0.12",
+    "hexo-butterfly-wowjs": "^1.0.5",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.0",
+    "hexo-renderer-pug": "^3.0.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-butterfly": "^5.5.4",
+    "hexo-wordcount": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "entries": {
+    "adea982cd662ad48090c87cb6e4a2f3ba75eaa896171db9a8bf875b6bde42c33": {
+      "id": "adea982cd662ad48090c87cb6e4a2f3ba75eaa896171db9a8bf875b6bde42c33",
+      "source": "_posts/welcome.md",
+      "title": "欢迎使用博客模板",
+      "url": "https://example.com/posts/welcome/",
+      "path": "posts/welcome/index.html",
+      "contentHash": "a04102feb1d6443cc8ef1ac3238be5667036bafa2d02bf7f0b15d5d2349597be",
+      "configHash": "da74634515d324d95d3398eb214b2016fcea730bccbdcfa7a0967f9d8da39805",
+      "model": "configure-your-model",
+      "promptVersion": "summary-zh-v1",
+      "generatedAt": "2026-10-15T02:48:13.669Z",
+      "summary": "这篇示例文章介绍公开博客模板的页面结构、文章摘要与内容配置方式：首页用于个人展示，博客列表集中呈现文章，相册和首页播放器默认没有个人数据。正文顶部的这段文字由人工编写，仅用于演示摘要样式。普通构建不会调用模型，读者访问时会一次性看到已有摘要；需要生成真实摘要时，应先配置自己的模型和本地密钥，再手动运行命令。使用者还需替换示例文章，并只添加有权公开的图片和音乐。",
+      "usage": {},
+      "example": true
+    }
+  }
+}

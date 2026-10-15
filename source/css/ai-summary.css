@@ -1,0 +1,16 @@
+#post #article-container .ai-article-summary {
+  margin: 0 0 1.75rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--light-grey, #e5e7eb);
+  border-inline-start: 3px solid var(--theme-color, #49b1f5);
+  border-radius: 8px;
+  color: var(--font-color, #4c4948);
+  background: var(--card-bg, #fff);
+  overflow-wrap: anywhere;
+}
+.ai-article-summary__heading { display: flex; align-items: center; gap: .6rem; line-height: 1.5; }
+.ai-article-summary__badge { padding: .1rem .35rem; border-radius: 4px; color: var(--theme-color, #49b1f5); background: var(--blockquote-bg, #f4f8fa); font-size: .75rem; font-weight: 700; }
+.ai-article-summary__label { margin-inline-start: auto; color: var(--font-color, #4c4948); opacity: .75; font-size: .75rem; white-space: nowrap; }
+#post #article-container .ai-article-summary p { margin: .7rem 0 0; line-height: 1.85; font-size: .95rem; }
+[data-theme="dark"] #post #article-container .ai-article-summary { border-color: #444; border-inline-start-color: var(--theme-color, #49b1f5); }
+@media (max-width: 480px) { #post #article-container .ai-article-summary { padding: .85rem .9rem; } }

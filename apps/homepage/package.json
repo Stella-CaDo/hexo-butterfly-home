@@ -1,0 +1,30 @@
+{
+  "name": "blog-template-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@icon-park/vue-next": "1.4.2",
+    "@vicons/fa": "0.12.0",
+    "@vicons/utils": "0.1.4",
+    "dayjs": "1.11.23",
+    "element-plus": "2.14.6",
+    "pinia": "4.0.3",
+    "vue": "3.5.43"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.9",
+    "sass": "1.105.0",
+    "vite": "8.3.1"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

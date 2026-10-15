@@ -1,0 +1,43 @@
+{
+  "profile": {
+    "name": "我的主页",
+    "englishName": "MY HOME",
+    "subtitle": "记录与分享",
+    "location": "位置未设置",
+    "quote": "这里可以写一句自己的话。",
+    "introduction": "这是一个可自行配置的个人主页和博客示例。",
+    "interests": "在这里填写你的兴趣",
+    "motto": "在这里填写你的介绍",
+    "site": "https://example.com",
+    "copyrightSince": 2026,
+    "icp": ""
+  },
+  "siteLinks": [
+    {
+      "icon": "Blog",
+      "name": "博客",
+      "link": "/blog/"
+    },
+    {
+      "icon": "CompactDisc",
+      "name": "音乐",
+      "link": ""
+    },
+    {
+      "icon": "Images",
+      "name": "相册",
+      "link": "/gallery/"
+    },
+    {
+      "icon": "User",
+      "name": "关于",
+      "link": "/about/"
+    },
+    {
+      "icon": "Image",
+      "name": "壁纸",
+      "link": "/gallery/wallpaper/"
+    }
+  ],
+  "socialLinks": []
+}

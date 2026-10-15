@@ -1,0 +1,27 @@
+name: Source checks and build
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            apps/homepage/package-lock.json
+      - run: npm ci
+      - run: npm --prefix apps/homepage ci
+      - run: npm run check:source
+      - run: node tools/versioning/check-index.cjs
+      - run: npm test
+      - run: npm run build
+      - run: git diff --exit-code

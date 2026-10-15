@@ -1,0 +1,8 @@
+# Copy to ignored _config.local.yml and edit locally.
+url: https://example.com
+title: 我的博客
+author: 站点作者
+deploy:
+  type: git
+  repo: REPLACE_WITH_YOUR_DEPLOYMENT_REPOSITORY
+  branch: main

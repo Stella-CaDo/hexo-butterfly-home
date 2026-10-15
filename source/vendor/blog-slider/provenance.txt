@@ -1,0 +1,8 @@
+Copied without changing behavior from the installed hexo-butterfly-swiper 1.0.12 package's lib directory.
+Package upstream: https://github.com/Akilarlxh/hexo-butterfly-swiper
+Package metadata declares Apache-2.0. The bundled Swiper library header identifies Swiper 4.1.6,
+Copyright 2014-2018 Vladimir Kharlampidi, released under the MIT License.
+Upstream Swiper: https://github.com/nolimits4web/swiper
+The original library headers are retained in swiper.min.js and swiper.min.css.
+Hosted on this site so carousel startup does not depend on the external npm CDN.
+Apache license text: LICENSE-APACHE-2.0.txt (https://www.apache.org/licenses/LICENSE-2.0.txt).

@@ -1,0 +1,68 @@
+html,
+body {
+  background: #20242b;
+  font-family: system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+  overflow: auto;
+}
+
+body {
+  min-width: 320px;
+}
+
+#app {
+  position: relative;
+  min-height: 100dvh;
+  height: auto;
+}
+
+button {
+  font: inherit;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+p,
+h1,
+h2,
+span {
+  user-select: text;
+}
+
+:focus-visible {
+  outline: 3px solid #b8dfff;
+  outline-offset: 5px;
+}
+
+.cards {
+  background: rgba(69, 69, 69, 0.01);
+}
+
+.left,
+.right {
+  min-width: 0;
+}
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
