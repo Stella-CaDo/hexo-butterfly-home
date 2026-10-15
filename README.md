@@ -59,6 +59,8 @@ npm run server
 
 普通安装、测试和构建**不会调用模型**。摘要在构建前生成并保存，读者打开文章时看到静态完整摘要，不是实时流式生成。
 
+当前客户端沿用 DeepSeek 的 JSON 输出和 `thinking: disabled` 参数。其他声称兼容 Chat Completions 的服务不一定支持全部参数，接入前需核对，必要时调整 `tools/ai-summary/model-client.cjs`。公开版本的验收使用模拟响应，没有用真实密钥调用模型。
+
 1. 在 `config/ai-summary.json` 填写自己的 HTTPS OpenAI Chat Completions 兼容地址与真实可用的模型名。`configure-your-model` 是待替换值。
 2. 复制根目录 `.env.ai.example` 为 `.env.ai.local`，在本机填写密钥；此文件已忽略提交。也可以使用进程环境变量。
 3. 先运行只检查、不发送请求的命令：
